@@ -23,7 +23,7 @@ public class VigenereCipher {
             int keyIndex = j % key.length(); 
             int temp = str1[j];
             int keytemp = str2[keyIndex];
-            int charnum = ((temp - 97 + keytemp) % 26 + 97);
+            int charnum = (((temp - 19 - keytemp) % 26) + 97);
             char postChange = (char) charnum;
             str1[j] = postChange;
         }
@@ -38,7 +38,7 @@ public class VigenereCipher {
             int keyIndex = j % key.length(); 
             int temp = str1[j];
             int keytemp = str2[keyIndex];
-            int charnum = ((temp - 97 - keytemp) % 26 + 97);
+            int charnum = ((temp - 97 + keytemp) % 26 + 97);
             char postChange = (char) charnum;
             str1[j] = postChange;
         }
