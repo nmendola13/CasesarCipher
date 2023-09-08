@@ -1,2 +1,2 @@
-# CasesarCipher
-encodes and decodes usign the ceasar cipher
+# CasesarCipher + VigenereCipher
+encodes and decodes usign the ceasar and Vigenere ciphers
